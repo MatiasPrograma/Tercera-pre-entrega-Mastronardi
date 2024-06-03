@@ -1,0 +1,11 @@
+{% extends 'padre.html' %}
+
+{% block i %}
+<h1>Resultados de la búsqueda</h1>
+  <ul>
+    {% for cliente in apellido %}
+      <li>{{ cliente.nombre }} - {{ cliente.apellido }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock i %}

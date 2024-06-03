@@ -1,0 +1,18 @@
+
+{% extends 'padre.html' %}
+
+
+{% block i %}
+
+<h1>Busqueda de datos de los clientes</h1>
+
+<form action="{% url 'buscar' %}" method = "get">
+
+    <p>Nombre del cliente: <input type="text" name= "nombre"></p>
+
+    <button type="submit"> Buscar </button>
+
+</form>
+
+{% endblock i %}
+
